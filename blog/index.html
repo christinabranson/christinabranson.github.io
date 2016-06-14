@@ -1,0 +1,47 @@
+---
+layout: page
+title: Blog
+---
+
+
+
+<div class="home">
+    {% for post in paginator.posts %}
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+                <span class="post-meta">
+            {% if site.name %}
+              <i class="fi-pencil"></i> {{ site.name }}
+            {% endif %}
+            {% if post.date %}
+              <i class="fi-calendar"></i> {{ post.date | date: "%b %-d, %Y" }}
+            {% endif %}
+            {% if post.categories[0] %}
+              <i class="fi-folder"></i>
+              {% for category in post.categories %}
+                <a class="post-link" href="{{ site.baseurl }}/blog/category/{{category}}">{{category}}</a> 
+              {% endfor%}
+            {% endif %}
+        </span>
+        <p>{{ post.content }}</p>
+    {% endfor %}
+
+<!-- Pagination links -->
+<ul class="pagination text-center" role="navigation" aria-label="Pagination">
+  {% if paginator.previous_page %}
+    <li class="pagination-previous"><a href="{{ paginator.previous_page_path }}" class="previous">Previous</a></li>
+  {% else %}
+     <li class="pagination-previous disabled">Previous <span class="show-for-sr">page</span></li>
+  {% endif %}
+   <li><span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span></li>
+  {% if paginator.next_page %}
+     <li class="pagination-next"><a href="{{ paginator.next_page_path }}" class="next">Next</a></li>
+  {% else %}
+    <li class="pagination-next disabled"><span class="next ">Next</span></li>
+  {% endif %}
+</ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>

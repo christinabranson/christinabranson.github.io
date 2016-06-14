@@ -1,0 +1,51 @@
+<div class="off-canvas-wrapper">
+  <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+
+    <!-- off-canvas title bar for 'small' screen -->
+    <div class="title-bar" data-responsive-toggle="widemenu" data-hide-for="medium">
+      <div class="title-bar-left">
+        <button class="menu-icon" type="button" data-open="offCanvasLeft"></button>
+        <span class="title-bar-title"><a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a></span>
+      </div>
+    </div>
+
+    <!-- off-canvas left menu -->
+    <div class="off-canvas position-left" id="offCanvasLeft" data-off-canvas>
+      <ul class="vertical dropdown menu" data-dropdown-menu>
+        {% for my_page in site.pages %}
+          {% if my_page.title %}
+            <li><a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+
+    <!-- "wider" top-bar menu for 'medium' and up -->
+    <div id="widemenu" class="top-bar">
+        <div class="row">
+      <div class="top-bar-left">
+        <ul class="dropdown menu" data-dropdown-menu>
+          <li class="menu-text"><a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a></li>
+          <li class="has-submenu">
+            <a href="#">Item 1</a>
+            <ul class="menu submenu vertical" data-submenu>
+              <li><a href="left_wide_11">Left wide 1</a></li>
+              <li><a href="left_wide_12">Left wide 2</a></li>
+              <li><a href="left_wide_13">Left wide 3</a></li>
+            </ul>
+          </li>
+          {% for my_page in site.pages %}
+            {% if my_page.title %}
+             <li><a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
+            {% endif %}
+          {% endfor %}
+
+          {% for col in site.samples %}
+                <li>{{ col.title }}</li>
+          {% endfor %}
+
+        </ul>
+      </div>
+      </div>
+    </div>
+    <!--- LEAVE THIS UNCLOSED; OFF-CANVA WRAPPER SHOULD GO AROUND ALL CONTENT -->

@@ -6,104 +6,73 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-#title: Christina Branson Personal Portfolio
-#email: clbranson@gmail.com
-#description: > # this means to ignore newlines until "baseurl:"
-#  Write an awesome description for your new site here. You can edit this
-#  line in _config.yml. It will appear in your document head meta (for
-#  Google search results) and in your feed.xml site description.
-#baseurl: "" # the subpath of your site, e.g. /blog
-#url: "http://https://personal-portfolio-chrissybranso.c9users.io/" # the base hostname & protocol for your site
-#twitter_username: jekyllrb
-#github_username:  christinabranson
+title: Foundation Barebones
+email: clbranson@gmail.com
+name: Christina Branson
+description: > # this means to ignore newlines until "baseurl:"
+  Foundation Barebones is a barebones Jekyll theme featuring elements from the Foundation front-end framework.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+socialmedia: # url of social media accounts
+   twitter: https://twitter.com/chrissybranso
+   github:  https://github.com/christinabranson
+   facebook: 
+   linkedin:
+
+# URL Settings
+url: "" # the base hostname & protocol for your site
+permalink: /blog/:year/:month/:day/:title.html # permalink to put posts in "blog" subdirectory
+
+# Blog Settings
+category_dir: /blog/category/ # The subfolder to build category pages in (default is 'categories').
+category_title_prefix: 'Category: ' #The string used before the category name in the page title (default is 'Category: ').
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Foundation Barebones
+email: clbranson@gmail.com
+name: Christina Branson
+description: > # this means to ignore newlines until "baseurl:"
+  Foundation Barebones is a barebones Jekyll theme featuring elements from the Foundation front-end framework.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://christinabranson.github.io" # the base hostname & protocol for your site
+socialmedia: # url of social media accounts
+   twitter: https://twitter.com/chrissybranso
+   github:  https://github.com/christinabranson
+   facebook: 
+   linkedin:
+
+# URL Settings
+url: "" # the base hostname & protocol for your site
+permalink: /blog/:year/:month/:day/:title.html # permalink to put posts in "blog" subdirectory
+
+# Blog Settings
+category_dir: /blog/category/ # The subfolder to build category pages in (default is 'categories').
+category_title_prefix: 'Category: ' #The string used before the category name in the page title (default is 'Category: ').
+paginate: 1 # Number of posts per page
+paginate_path: "/blog/page:num/"
+
+# Environment settings
+production: false
+port: 8080 # local setting for cloud9 dev
+host: 0.0.0.0 # local setting for cloud9 dev
+timezone: "America/New_York"
 
 # Build settings
-#markdown: kramdown
+markdown: kramdown
 
-
-#
-# This file contains configuration flags to customize your site
-#
-
-# Name of your site (displayed in the header)
-name: Christina Branson
-
-# Short bio or description (displayed in the header)
-description: Freelance web developer based in Philadelphia, PA
-
-# URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://avatars2.githubusercontent.com/u/4583477?v=3&s=460
-
-#
-# Flags below are optional
-#
-
-# Includes an icon in the footer for each username you enter
-footer-links:
-  dribbble:
-  email:
-  facebook:
-  flickr:
-  github: christinabranson
-  instagram:
-  linkedin:
-  pinterest:
-  rss: # just type anything here for a working RSS icon
-  twitter: 
-  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
-  youtube: # channel/<your_long_string> or user/<user-name>
-  googleplus: # anything in your profile username that comes after plus.google.com/
-
-
-# Enter your Disqus shortname (not your username) to enable commenting on posts
-# You can find your shortname on the Settings page of your Disqus account
-disqus:
-
-# Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics:
-
-# Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
-# Used for Sitemap.xml and your RSS feed
-url:
-
-# If you're hosting your site at a Project repository on GitHub pages
-# (http://yourusername.github.io/repository-name)
-# and NOT your User repository (http://yourusername.github.io)
-# then add in the baseurl here, like this: "/repository-name"
-baseurl: ""
-
-#
-# !! You don't need to change any of the configuration flags below !!
-#
-
-permalink: /:title/
-
-# The release of Jekyll Now that you're using
-version: v1.2.0
-
-# Jekyll 3 now only supports Kramdown for Markdown
-kramdown:
-  # Use GitHub flavored markdown, including triple backtick fenced code blocks
-  input: GFM
-  # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
-  syntax_highlighter: rouge
-  syntax_highlighter_opts:
-    # Use existing pygments syntax highlighting css
-    css_class: 'highlight'
-
-# Set the Sass partials directory, as we're using @imports
-sass:
-  style: :expanded # You might prefer to minify using :compressed
-
-# Use the following plug-ins
+# Collections
+collections:
+  examples:
+    output: true
+    permalink: /documentation/:path/
+    
+# Gems
 gems:
-  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
-  - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
-
-# Exclude these files from your production _site
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - LICENSE
-  - README.md
-  - CNAME
+    - jekyll-paginate
+    - jekyll-sitemap

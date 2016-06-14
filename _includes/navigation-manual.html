@@ -11,6 +11,10 @@
 
     <!-- off-canvas left menu -->
     <div class="off-canvas position-left" id="offCanvasLeft" data-off-canvas>
+              <!-- Close button -->
+        <button class="close-button" aria-label="Close menu" type="button" data-close>
+          <span aria-hidden="true">&times;</span>
+        </button>
       <ul class="vertical dropdown menu" data-dropdown-menu>
         {% for my_page in site.pages %}
           {% if my_page.title %}

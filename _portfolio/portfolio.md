@@ -4,4 +4,10 @@ title: Portfolio
 permalink: /portfolio/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+This section of the site serves as my portfolio for my various web development projects. 
+Many of the projects below are open-source and can be found on my [GitHub](https://github.com/christinabranson) account.
+
+{% for doc in site.portfolio %}
+  <h3><a href="{{ doc.url }}">{{ doc.title }}</a></h3>
+  <p>{{ doc.description }}</p>
+{% endfor %}

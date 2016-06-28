@@ -1,8 +1,11 @@
-
 {% include navigation-manual.html %}
 
-<header class="row">
-    <h1><a href="{{ my_page.url | prepend: site.baseurl }}">{{ site.title }}</a></h1>
-    <h2><small>{{ site.description }}</small></h2>
+<header class="expanded row" data-interchange="[https://personal-portfolio-chrissybranso.c9users.io/assets/img/aurora-small.png, small], [https://personal-portfolio-chrissybranso.c9users.io/assets/img/aurora-medium.png, medium], [https://personal-portfolio-chrissybranso.c9users.io/assets/img/aurora-large.png, large], [https://personal-portfolio-chrissybranso.c9users.io/assets/img/aurora-xlarge.png, x-large]">
+    <div class="row">
+      <div class="row header-text">
+        <div class="hide-for-small-only large-4 columns"><span class="logo text-right">&nbsp;</span></div>
+        <div class="small-12 large-8 columns"><span class="header-large">Christina Branson</span><span class="header-sub">Freelance web developer</span></div>
+      </div>
+    </div>
 </header>
 {% include breadcrumbs.html %}

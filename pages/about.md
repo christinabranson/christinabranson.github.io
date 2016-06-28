@@ -1,7 +1,11 @@
 ---
-layout: page
+layout: about
 title: About
+personal-description: I'm a freelance web developer in Philadelphia, PA.
 permalink: /about/
+image: /assets/img/christina.jpg
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+<a href="">Download CV</a> <a href="">View Portfolio</a>
+
+I'm a freelance web developer based in Philadelphia, PA. I en

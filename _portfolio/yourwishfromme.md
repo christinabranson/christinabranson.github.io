@@ -1,26 +1,42 @@
 ---
 layout: page
 title: Your Wish From Me
-description: Page that demonstrates the Orbit slider inserted into the page.
+description: Your Wish From Me was a crowd-funding wishlist site.
 permalink: /portfolio/yourwishfromme/
 gallery:
     - image_url: /assets/img/tree.jpg # url of image
-      image_caption: Image of a tree # caption of image
-      image_alt: Image of a tree # alt= description of image
+      image_caption: Homepage of Your Wish From Me
+      image_alt: Homepage of Your Wish From Me # alt= description of image
     - image_url: /assets/img/ocean.jpg
-      image_caption: Image of Ocean
-      image_alt: Image of Ocean      
+      image_caption: An example of a wishlist on Your Wish From Me
+      image_alt: An example of a wishlist on Your Wish From Me      
+    - image_url: /assets/img/ocean.jpg
+      image_caption: Your Wish From Me uses the Amazon Product Search API to allow users to search for new wishes
+      image_alt: Your Wish From Me uses the Amazon Product Search API to allow users to search for new wishes
       
 ---
 
 # Your Wish From Me
 
 ## Description
-Your Wish From Me (YWFM) is a crowdsharing websites
+Your Wish From Me (YWFM) was a crowd-funding website
 
 ## Technologies Used
-YWFM was built primarily using PHP. It was originally built by heavily modifying the open-source eCommerce platform, OpenCart.
+YWFM was built primarily using PHP. It was originally built by heavily modifying the open-source eCommerce platform, OpenCart. 
+The Amazon Product Search API was used to allow users to search and add products to their wishlist.
 
 
+### Technology Overview
+
+Languages used: PHP, HTML5, jQuery, JavaScript
+Frameworks used: OpenCart, CodeIgniter, Foundation (for front-end)
+APIs used: Amazon Product Search API, Authorize.net for payment, Facebook Login, Twitter and Pinterest for sharing
+
+
+### Project Screenshots
 
 {% include orbit.html %}
+
+### Media & Marketing
+
+In addition to the development of the website, I also managed the social media and marketing of the website. 

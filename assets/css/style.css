@@ -241,4 +241,7 @@ section {
   text-align: center;
 }
 
-
+article li {
+  list-style-type: disc;
+  margin-left: 50px;
+}

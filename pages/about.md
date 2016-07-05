@@ -18,8 +18,6 @@ You should also [read my resume](/about/resume/) for a complete overview of my p
 
 ## How I Work
 
-My mailing address
-
 When working on side projects, I try to create in the open [Check out my GitHub](https://github.com/christinabranson){:target="_blank"} and I develop on the cloud.
 
 My tools of choice include:
@@ -27,9 +25,3 @@ My tools of choice include:
 * PHP
 * Cloud9 (read more)
 * Git
-
-
-
-## Why I Work
-
-Pardon my French, but I *effin love* web development. I love how you can turn a bunch of brackets and 

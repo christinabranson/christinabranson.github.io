@@ -85,7 +85,8 @@ scales and generate graphs for visualization and presentation
 
 ### MS Atmospheric Science from University of Alabama-Huntsville
 I obtained my Master's degree in Atmospheric Science from the University of Alabama-Huntsville in December 2012. My program was very programming-intensive. In addition to the research described above 
-while I was a graduate research assistant at UAH, I also 
+while I was a graduate research assistant at UAH, I also performed meteorological simulations and climate modeling in Matlab, statistical analysis and data visualization in IDL, and
+I wrote a storm-tracking programming using mathematical morphology in Matlab.
 
 ### BS Mathematics from Rowan University
 I majored in Mathematics with a minor in Physics while at Rowan, but I also discovered my real passion for programming. While at Rowan, I took several courses in C++. I also performed research in Linear Algebra 

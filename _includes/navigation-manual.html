@@ -43,7 +43,7 @@
           <h3>
             {% for social in site.socialmedia %}
               {% if social[1] %}
-               <a href="{{ social[1] }}" target="_blank" title="{{ social[0] }}"><i class="fi-social-{{ social[0] }}"></i></a>
+               <a href="{{ social[1] }}" target="_blank" title="{{ social[0] }}"><i class="fa fa-{{ social[0] }}"></i></a>
               {% endif %}
             {% endfor %}
           </h3>

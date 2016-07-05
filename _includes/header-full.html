@@ -1,7 +1,7 @@
 {% include navigation-manual.html %}
 
-        <div class="medium-12 large-6 columns">
-          <div id="homepage" {% if page.header_image %}style="background-image: url('{{ page.header_image }}');"{% else %} data-interchange="[https://personal-portfolio-chrissybranso.c9users.io/assets/img/aurora-small.png, small], [https://personal-portfolio-chrissybranso.c9users.io/assets/img/aurora-medium.png, medium], [https://personal-portfolio-chrissybranso.c9users.io/assets/img/aurora-large.png, large], [https://personal-portfolio-chrissybranso.c9users.io/assets/img/aurora-xlarge.png, x-large]" {% endif %}>
+        <div class="large-12 columns">
+          <div id="homepage" style="min-width: 100% !important; max-width: 100% !important;" {% if page.header_image %}style="background-image: url('{{ page.header_image }}');"{% else %} data-interchange="[https://personal-portfolio-chrissybranso.c9users.io/assets/img/aurora-small.png, small], [https://personal-portfolio-chrissybranso.c9users.io/assets/img/aurora-medium.png, medium], [https://personal-portfolio-chrissybranso.c9users.io/assets/img/aurora-large.png, large], [https://personal-portfolio-chrissybranso.c9users.io/assets/img/aurora-xlarge.png, x-large]" {% endif %}>
             <div class="row expanded main">
               <button class="menu-icon" type="button" data-open="offCanvas"></button>
               <h1 class="header-large text-left">Christina Branson</h1>
@@ -20,5 +20,3 @@
             </div>
           </div>
         </div>
-        <div class="medium-12 large-6 columns main">
-{% include breadcrumbs.html %}

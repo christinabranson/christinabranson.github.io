@@ -10,20 +10,7 @@ title: Blog
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
-                <span class="post-meta">
-            {% if site.name %}
-              <i class="fi-pencil"></i> {{ site.name }}
-            {% endif %}
-            {% if post.date %}
-              <i class="fi-calendar"></i> {{ post.date | date: "%b %-d, %Y" }}
-            {% endif %}
-            {% if post.categories[0] %}
-              <i class="fi-folder"></i>
-              {% for category in post.categories %}
-                <a class="post-link" href="{{ site.baseurl }}/blog/category/{{category}}">{{category}}</a> 
-              {% endfor%}
-            {% endif %}
-        </span>
+        {% include post_meta.html %}
         <p>{{ post.content }}</p>
     {% endfor %}
 

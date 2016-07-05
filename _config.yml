@@ -6,39 +6,11 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Foundation Barebones
+title: Christina Branson
 email: clbranson@gmail.com
 name: Christina Branson
 description: > # this means to ignore newlines until "baseurl:"
-  Foundation Barebones is a barebones Jekyll theme featuring elements from the Foundation front-end framework.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-socialmedia: # url of social media accounts
-   twitter: https://twitter.com/chrissybranso
-   github:  https://github.com/christinabranson
-   facebook: 
-   linkedin:
-
-# URL Settings
-url: "" # the base hostname & protocol for your site
-permalink: /blog/:year/:month/:day/:title.html # permalink to put posts in "blog" subdirectory
-
-# Blog Settings
-category_dir: /blog/category/ # The subfolder to build category pages in (default is 'categories').
-category_title_prefix: 'Category: ' #The string used before the category name in the page title (default is 'Category: ').
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
-
-# Site settings
-title: Foundation Barebones
-email: clbranson@gmail.com
-name: Christina Branson
-description: > # this means to ignore newlines until "baseurl:"
-  Foundation Barebones is a barebones Jekyll theme featuring elements from the Foundation front-end framework.
+  Christina Branson is a 28 year old freelance web developer based in Philadelphia, PA.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://christinabranson.github.io" # the base hostname & protocol for your site
 socialmedia: # url of social media accounts
@@ -46,6 +18,7 @@ socialmedia: # url of social media accounts
    github:  https://github.com/christinabranson
    facebook: 
    linkedin:
+   codepen: http://codepen.io/christinabranson/
 
 # URL Settings
 url: "" # the base hostname & protocol for your site
@@ -63,14 +36,21 @@ port: 8080 # local setting for cloud9 dev
 host: 0.0.0.0 # local setting for cloud9 dev
 timezone: "America/New_York"
 
+# SEO settings
+google_analytics_code: 123456 # code for google analytics tracking
+site_logo: # used as default image when article featured image not available
+facebook_app_id: # facebook app id
+twitter_publisher_handle: # publisher handle for twitter meta
+twitter_author_handle: # author handle for twitter meta
+
 # Build settings
 markdown: kramdown
 
 # Collections
 collections:
-  examples:
+  portfolio:
     output: true
-    permalink: /documentation/:path/
+    permalink: /portfolio/:path/
     
 # Gems
 gems:

@@ -1,23 +1,35 @@
 ---
-layout: default
+layout: front
+description: Shows of the page template for a three-pane feature page.
 ---
 
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+  <section id="services">
+    <div class="row" data-equalizer>
+      <div class="large-4 columns services" data-equalizer-watch>
+        <div class="panel webdesign" data-equalizer-watch>
+          <h3 class="highlight"><i class="fi-pencil"></i> Web Design</h3>
+          <p>I focus on creating well-designed, responsive websites that offer the best in user experience.
+          <br/>
+            <a href="#">Read more about Web Design.</a>
+          </p>
+        </div>
+      </div>
+      <div class="large-4 columns services" data-equalizer-watch>
+        <div class="panel webdevelopment" data-equalizer-watch>
+          <h3 class="highlight"><i class="fi-layout"></i> Web Development</h3>
+          <p>Web development is my passion. I love creating
+          <br/>
+          <a href="#">Read more about Web Development.</a>
+          </p>
+        </div>
+      </div>
+      <div class="large-4 columns services" data-equalizer-watch>
+        <div class="panel marketing" data-equalizer-watch>
+          <h3 class="highlight"><i class="fi-graph-trend"></i> Marketing & SEO</h3>
+          <p>I provide marketing services including content management and social media marketing. I provide search engine optimization and keywork research, and I provide data-driven reports to show our progress.
+          <br/>
+          <a class="text-right" href="#">Read more about Marketing.</a></p>
+        </div>
+      </div>
+    </div>
+  </section>

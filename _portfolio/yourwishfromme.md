@@ -2,21 +2,35 @@
 layout: page
 title: Your Wish From Me
 description: Your Wish From Me was a crowd-funding wishlist site.
+excerpt: Blah blah blah
+featured_image: /assets/img/yourwishfromme/your-wish-from-me-homepage.jpg
 permalink: /portfolio/yourwishfromme/
 gallery:
-    - image_url: /assets/img/tree.jpg # url of image
+    - image_url: /assets/img/yourwishfromme/your-wish-from-me-homepage.jpg
       image_caption: Homepage of Your Wish From Me
-      image_alt: Homepage of Your Wish From Me # alt= description of image
-    - image_url: /assets/img/ocean.jpg
+      image_alt: Homepage of Your Wish From Me
+    - image_url: /assets/img/yourwishfromme/your-wish-from-me-wishlist.jpg
       image_caption: An example of a wishlist on Your Wish From Me
-      image_alt: An example of a wishlist on Your Wish From Me      
-    - image_url: /assets/img/ocean.jpg
+      image_alt: An example of a wishlist on Your Wish From Me 
+    - image_url: /assets/img/yourwishfromme/your-wish-from-me-search.jpg
       image_caption: Your Wish From Me uses the Amazon Product Search API to allow users to search for new wishes
-      image_alt: Your Wish From Me uses the Amazon Product Search API to allow users to search for new wishes
-      
+      image_alt: Your Wish From Me uses the Amazon Product Search API to allow users to search for new wishes        
+    - image_url: /assets/img/yourwishfromme/your-wish-from-me-product.jpg
+      image_caption: Your Wish From Me uses the Amazon Product Search API to allow users to search for new wishes
+      image_alt: Your Wish From Me uses the Amazon Product Search API to allow users to search for new wishes 
+    - image_url: /assets/img/yourwishfromme/your-wish-from-me-similar-products.jpg
+      image_caption: Your Wish From Me uses the Amazon Product Search API to allow users to search for new wishes
+      image_alt: Your Wish From Me uses the Amazon Product Search API to allow users to search for new wishes      
+    - image_url: /assets/img/yourwishfromme/your-wish-from-me-friends.jpg
+      image_caption: An example of a wishlist on Your Wish From Me
+      image_alt: An example of a wishlist on Your Wish From Me  
+    - image_url: /assets/img/yourwishfromme/your-wish-from-me-footer.jpg
+      image_caption: Homepage of Your Wish From Me
+      image_alt: Homepage of Your Wish From Me
+    - image_url: /assets/img/yourwishfromme/your-wish-from-me-login.jpg
+      image_caption: Your Wish From Me uses the Amazon Product Search API to allow users to search for new wishes
+      image_alt: Your Wish From Me uses the Amazon Product Search API to allow users to search for new wishes      
 ---
-
-# Your Wish From Me
 
 ## Description
 Your Wish From Me (YWFM) was a crowd-funding website

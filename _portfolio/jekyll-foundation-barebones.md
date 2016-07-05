@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Foundation Barebones Jekyll Theme
+excerpt: Blah blah blah
 description: Foundation Barebones is a minimalistic Jekyll theme designed to bring elements from the Foundation front-end framework to be used in Jekyll-powered sites.
 permalink: /portfolio/jekyll-foundation-barebones/
 gallery:
@@ -15,9 +16,8 @@ gallery:
       image_alt: Screenshot of the Foundation Barebones theme showing the breadcrumbs       
 ---
 
-## Description
 Foundation Barebones is a minimalistic Jekyll theme designed to bring elements from the Foundation front-end framework to be used in Jekyll-powered sites.
-The source code can be found on [my GitHub account]() and the demo site at [Jekyll Foundation Barebones]().
+The source code can be found on [my GitHub account](https://github.com/christinabranson){:target="_blank"} and the demo site at [Jekyll Foundation Barebones](){:target="_blank"}.
 
 The theme contains no custom CSS or Javascript, but simply defaults to the custom Foundation styling. This allows
 the user to style as they desire, but still maintain easy access to the Foundation elements that make up many modern websites.

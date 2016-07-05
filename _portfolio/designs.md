@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Bluffton Homes
+title: Designs
 description: Page that demonstrates the Orbit slider inserted into the page.
 excerpt: Blah blah blah
 featured_image: /assets/img/blufftonhomes/bluffton-homepage.jpg
-permalink: /portfolio/blufftonhomes/
+permalink: /portfolio/designs/
 gallery:
     - image_url: /assets/img/blufftonhomes/bluffton-homepage.jpg
       image_caption: Image of a tree # caption of image
@@ -20,11 +20,8 @@ gallery:
       image_alt: Image of Ocean    
 ---
 
-## Description
-Your Wish From Me (YWFM) is a crowdsharing websites
+I've always considered myself a coder more than a designer, but I still like to dabble. 
 
-The website for Bluffton Homes uses WordPress as their content management system. I developed the theme used.
-
-In additio
-
-{% include orbit.html %}
+| Screenshot | Live Preview | Code |
+| --- | --- | --- |
+| (insert image) | (insert link) | (insert code) |

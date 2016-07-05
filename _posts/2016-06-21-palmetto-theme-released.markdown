@@ -3,9 +3,8 @@ layout: post
 title:  "Palmetto Theme Released"
 date:   2016-06-21 03:37:00 +0000
 categories: wordpress
-header_image: /assets/img/philly.jpg
-featured_image: /assets/img/philly.jpg
-excerpt: Hi this is an excertp
+featured_image: /assets/img/palmetto/palmetto-home-page.jpg
+excerpt: I'm announcing the release of my first WordPress theme, Palmetto. It's designed specifically for real estate and rental agencies.
 gallery:
     - image_url: /assets/img/palmetto/palmetto-home-page.jpg
       image_caption: The homepage of the Palmetto theme

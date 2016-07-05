@@ -1,53 +1,57 @@
 <div class="off-canvas-wrapper">
   <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+    <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
 
-    <!-- off-canvas title bar for 'small' screen -->
-    <div class="title-bar" data-responsive-toggle="widemenu" data-hide-for="medium">
-      <div class="title-bar-left">
-        <button class="menu-icon" type="button" data-open="offCanvasLeft"></button>
-        <span class="title-bar-title"><a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a></span>
-      </div>
-    </div>
-
-    <!-- off-canvas left menu -->
-    <div class="off-canvas position-left" id="offCanvasLeft" data-off-canvas>
-              <!-- Close button -->
-        <button class="close-button" aria-label="Close menu" type="button" data-close>
+      <!-- Close button -->
+      <button class="close-button" aria-label="Close menu" type="button" data-close>
           <span aria-hidden="true">&times;</span>
         </button>
-      <ul class="vertical dropdown menu" data-dropdown-menu>
-        {% for my_page in site.pages %}
-          {% if my_page.title %}
-            <li><a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
-          {% endif %}
-        {% endfor %}
-      </ul>
+
+      <!-- Menu -->
+      <div class="ocvert">
+        <ul class="vertical menu">
+          <li><a href="#">Home</a></li>
+          <li>
+            <a href="/about/">About</a>
+            <ul class="nested vertical menu">
+              <li><a href="/about/resume/">Resume</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="/portfolio/">Portfolio</a>
+            <ul class="nested vertical menu">
+              <li><a href="/portfolio/yourwishfromme/">Your Wish From Me</a></li>
+              <li><a href="/portfolio/palmetto/">Palmetto (WordPress Theme)</a></li>
+              <li><a href="/portfolio/blufftonhome/">Bluffton Homes</a></li>
+              <li><a href="/portfolio/founation-jekyll-barebones/">Foundation Barebones (Jekyll Theme)</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="/blog/">Blog</a>
+            <ul class="nested vertical menu">
+              <li><a href="/blog/archive/">Blog Archives</a></li>
+              <li class="menu-text">Blog Categories</li>
+              <li><a href="#">WordPress</a></li>
+              <li><a href="#">Design</a></li>
+              <li><a href="#">Personal</a></li>
+            </ul>
+          </li>
+          <li><a href="/contact/">Contact</a></li>
+          <li><a href="/hire-me/">Hire Me</a></li>
+        </ul>
+        <div class="row main">
+          <h3>
+            {% for social in site.socialmedia %}
+              {% if social[1] %}
+               <a href="{{ social[1] }}" target="_blank" title="{{ social[0] }}"><i class="fi-social-{{ social[0] }}"></i></a>
+              {% endif %}
+            {% endfor %}
+          </h3>
+        </div>
+      </div>
     </div>
 
-    <!-- "wider" top-bar menu for 'medium' and up -->
-    <div id="widemenu" class="top-bar">
-     <div class="row">
-      <div class="top-bar-left">
-        <ul class="dropdown menu" data-dropdown-menu>
-          <li class="menu-text"><a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a></li>
-          <li><a href="https://personal-portfolio-chrissybranso.c9users.io/about/">About</a></li>
-          <li class="has-submenu">
-            <a href="https://personal-portfolio-chrissybranso.c9users.io/blog/">Blog</a>
-            <ul class="menu submenu vertical" data-submenu>
-              <li><a href="https://personal-portfolio-chrissybranso.c9users.io/blog/archive/">Archive</a></li>
-            </ul>
-          </li>
-          <li class="has-submenu">
-            <a href="https://personal-portfolio-chrissybranso.c9users.io/examples/">Examples</a>
-            <ul class="menu submenu vertical" data-submenu>
-              <li><a href="https://personal-portfolio-chrissybranso.c9users.io/examples/orbit/">Orbit Slider</a></li>
-              <li><a href="https://personal-portfolio-chrissybranso.c9users.io/examples/full-width-page/">Full Width Page</a></li>
-              <li><a href="https://personal-portfolio-chrissybranso.c9users.io/examples/feature/">Feature Page</a></li>
-              <li><a href="https://personal-portfolio-chrissybranso.c9users.io/examples/style/">Style Guide</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-      </div>
-    </div>
+    <div class="off-canvas-content" data-off-canvas-content>
+      <div class="row expanded">
+
     <!--- LEAVE THIS UNCLOSED; OFF-CANVA WRAPPER SHOULD GO AROUND ALL CONTENT -->

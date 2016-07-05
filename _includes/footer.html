@@ -17,6 +17,14 @@
               {% endif %}
             {% endfor %}
       </h2>
+        <h2>
+            {% for social in site.socialmedia %}
+              {% if social[1] %}
+               <a href="{{ social[1] }}" target="_blank" title="{{ social[0] }}"><i class="fa fa-{{ social[0] }}"></i></a>
+              {% endif %}
+            {% endfor %}
+      </h2>
+      
     </div>
     <div class="large-4 columns">
 
@@ -30,7 +38,14 @@
 
   <!-- Initialize Foundation -->
   <script>
+    // Initalize foundation
     $(document).foundation();
+    
+    $("#homepage").css("min-height", $(window).height());
+    $(".ocvert").css("min-height", $(window).height());
+    
+
+    $("#offCanvas").css("min-height", $(window).height());
   </script>
 
 

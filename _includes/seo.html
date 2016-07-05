@@ -6,7 +6,7 @@
     <meta property="og:type" content="article" />
     <meta property="og:url" content="{{ page.url }}" />
     <meta property="og:image" content="{% if page.featured_image %}{{ page.featured_image }}{% else %}{{ site.site_logo }}{% endif %}" />
-    <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"> /> 
+    <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"> 
     <meta property="og:site_name" content="{{site.title}}" />
 {% if site.facebook_app_id %}
     <meta property="fb:app_id" content="{{site.facebook_app_id}}" />
@@ -21,7 +21,7 @@
 {% endif %}
 
     <meta name="twitter:title" content="{% if page.title %}{{ site.title: page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}">
-    <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">>
+    <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
     <meta name="twitter:image" content="{% if page.featured_image %}{{ page.featured_image }}{% else %}{{ site.site_logo }}{% endif %}">
 
 

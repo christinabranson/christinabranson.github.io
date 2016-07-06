@@ -4,16 +4,16 @@ title: Blog Archive
 permalink: /blog/archive/
 ---
 
-<ul class="post-list">
-  {% for post in site.posts %}
-    <li>
-      <h2>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </h2>
-      {% include post_meta.html %}
-      <p>{{ post.excerpt }}</p>
-    </li>
-  {% endfor %}
-</ul>
+    {% for post in site.posts %}
+    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+        <h2 itemprop="name headline">
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+        {% include post_meta.html %}
+        <div class="post-content" itemprop="articleBody">
+          {{ post.excerpt }}
+      </div>
+    </article>
+    {% endfor %}
 
 <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>

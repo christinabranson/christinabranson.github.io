@@ -3,32 +3,32 @@ layout: page
 title: Blog
 ---
 
-
-
-<div class="home">
     {% for post in paginator.posts %}
-        <h2>
+    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+        <h2 itemprop="name headline">
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
         {% include post_meta.html %}
-        <p>{{ post.content }}</p>
+        <div class="post-content" itemprop="articleBody">
+          {{ post.content }}
+      </div>
+    </article>
     {% endfor %}
 
-<!-- Pagination links -->
-<ul class="pagination text-center" role="navigation" aria-label="Pagination">
-  {% if paginator.previous_page %}
-    <li class="pagination-previous"><a href="{{ paginator.previous_page_path }}" class="previous">Previous</a></li>
-  {% else %}
-     <li class="pagination-previous disabled">Previous <span class="show-for-sr">page</span></li>
-  {% endif %}
-   <li><span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span></li>
-  {% if paginator.next_page %}
-     <li class="pagination-next"><a href="{{ paginator.next_page_path }}" class="next">Next</a></li>
-  {% else %}
-    <li class="pagination-next disabled"><span class="next ">Next</span></li>
-  {% endif %}
-</ul>
+    <!-- Pagination links -->
+    <ul class="pagination text-center" role="navigation" aria-label="Pagination">
+      {% if paginator.previous_page %}
+        <li class="pagination-previous"><a href="{{ paginator.previous_page_path }}" class="previous">Previous</a></li>
+      {% else %}
+         <li class="pagination-previous disabled">Previous <span class="show-for-sr">page</span></li>
+      {% endif %}
+       <li><span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span></li>
+      {% if paginator.next_page %}
+         <li class="pagination-next"><a href="{{ paginator.next_page_path }}" class="next">Next</a></li>
+      {% else %}
+        <li class="pagination-next disabled"><span class="next ">Next</span></li>
+      {% endif %}
+    </ul>
 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
-</div>

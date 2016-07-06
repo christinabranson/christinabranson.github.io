@@ -127,15 +127,22 @@ h6 {
 
 ul,
 li {
-  list-style-type: none;
   margin: 0px;
   padding: 0px;
 }
 
 
+
 ul, ol {
-  list-style: none;
+
   padding: 0;
+}
+
+
+article ul,
+article li {
+  margin: 0px;
+  margin-left: 1.4em; /* same as padding-left set on li */
 }
 
 

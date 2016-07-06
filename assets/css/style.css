@@ -127,17 +127,10 @@ h6 {
 
 ul,
 li {
+  list-style-type: none;
   margin: 0px;
   padding: 0px;
 }
-
-
-
-ul, ol {
-
-  padding: 0;
-}
-
 
 article ul,
 article li {
@@ -147,11 +140,12 @@ article li {
 
 
 
-#resume li {
+
+#resume li, article li {
   padding-left: 1.5em;
   display: block;
 }
-#resume li:before {
+#resume li:before, article li:before {
   content: "\f105"; /* FontAwesome Unicode */
   font-family: FontAwesome;
   display: inline-block;
@@ -162,6 +156,16 @@ article li {
 
 #resume li:hover {
   background: #eee;
+}
+
+.orbit li {
+  padding: 0px;
+}
+
+.orbit li::before {
+  content: ""; /* FontAwesome Unicode */
+  font-family: FontAwesome;
+  display: inline-block;
 }
 
 /* Section */

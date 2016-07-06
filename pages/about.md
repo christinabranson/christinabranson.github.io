@@ -22,6 +22,8 @@ When working on side projects, I try to create in the open [Check out my GitHub]
 
 My tools of choice include:
 
-* PHP
-* Cloud9 (read more)
-* Git
+* Asana, for project management
+* PHP, with Laravel being my current framework-of-choice
+* Cloud9 as my preferred IDE
+* Git, for source control
+* 

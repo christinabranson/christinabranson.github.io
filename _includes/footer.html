@@ -1,14 +1,14 @@
 <footer class="site-footer">
 
   <div class="row">
-    <div class="large-4 columns">
+    <div class="large-6 columns">
       <h4>Site Information</h4>
           <li>{{ site.title }}</li>
           <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
           <p>{{site.description}}</p>
       
     </div>
-    <div class="large-4 columns">
+    <div class="large-6 columns">
       <h4>Social Media</h4>
         <h2>
             {% for social in site.socialmedia %}
@@ -19,14 +19,10 @@
       </h2>
       
     </div>
-    <div class="large-4 columns">
-
-      
-    </div>
   </div>
   <div class="row text-center">
-    <p>Powered by <a href="https://jekyllrb.com/">Jekyll</a>. <a href="">Barebones Foundation Theme</a> by <a href="">Christina Branson</a>.</p>
-    
+    <p>Powered by <a href="https://jekyllrb.com/">Jekyll</a>.</p>
+    <p>Theme built on <a href="">Barebones Foundation Theme</a> by <a href="/">Christina Branson</a>.</p>
   </div>
 
   <!-- Initialize Foundation -->
@@ -34,10 +30,11 @@
     // Initalize foundation
     $(document).foundation();
     
+    // Make image section fill window height
     $("#homepage").css("min-height", $(window).height());
-    $(".ocvert").css("min-height", $(window).height());
     
-
+    // Make off-canvas navigation fill window height
+    $(".ocvert").css("min-height", $(window).height());
     $("#offCanvas").css("min-height", $(window).height());
   </script>
 

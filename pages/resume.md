@@ -13,12 +13,8 @@ my [portfolio](/portfolio/) for more information about my personal portfolio.
 
 ## Mission Statement
 
-I'm a full-stack web developer with a specialty in PHP. I like 
-
-1. Custom website developments
-2. WordPress integrations
-
-I'm currently available for both full-time positions and freelance work. 
+I'm a full-stack web developer with a specialty in PHP. I'm interested in positions that will allow me to expand my skills and work on interesting projects. You should feel free to 
+[contact me](/about/hire-me/) if you have any interesting projects. I'm currently available for both full-time positions and freelance work. 
 
 ## Technical Skills
 PHP, HTML5, JavaScript, jQuery, CSS, MySQL, MS SQL Server, Wordpress, Java, C++, C#, Perl, Matlab/Octve, IBM Cognos,

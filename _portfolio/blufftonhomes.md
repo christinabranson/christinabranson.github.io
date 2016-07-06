@@ -23,6 +23,6 @@ gallery:
 [Bluffton Homes 4 Rent](http://blufftonhomes4rent.com){:target="_blank"} is a rental agency client of mine based in Bluffton, South Carolina. I performed the WordPress integration, using 
 [Palmetto](http://christinabranson.github.io/palmetto){:target="_blank"}, a theme I developed specifically for them.
 
-In additio
+In addition to developing their website, I also manage their web content and social media presence.
 
 {% include orbit.html %}

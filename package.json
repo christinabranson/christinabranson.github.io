@@ -2,11 +2,16 @@
   "name": "christinabranson.github.io",
   "scripts": {
     "build": "npx projen build",
+    "clean-npm": "npx projen clean-npm",
     "clobber": "npx projen clobber",
     "compile": "npx projen compile",
     "default": "npx projen default",
+    "deploy:build": "npx projen deploy:build",
+    "deploy:export": "npx projen deploy:export",
+    "deploy:gh": "npx projen deploy:gh",
     "dev": "npx projen dev",
     "eject": "npx projen eject",
+    "eslint": "npx projen eslint",
     "export": "npx projen export",
     "package": "npx projen package",
     "post-compile": "npx projen post-compile",
@@ -20,21 +25,34 @@
     "projen": "npx projen"
   },
   "devDependencies": {
+    "@stylistic/eslint-plugin": "^2",
     "@types/node": "^16",
-    "@types/react": "^19.0.0",
+    "@types/react": "^19.0.1",
     "@types/react-dom": "^19.0.1",
+    "@typescript-eslint/eslint-plugin": "^8",
+    "@typescript-eslint/parser": "^8",
+    "autoprefixer": "^10.4.20",
     "constructs": "^10.0.0",
+    "eslint": "^9",
+    "eslint-import-resolver-typescript": "^3.7.0",
+    "eslint-plugin-import": "^2.31.0",
+    "gh-pages": "^6.2.0",
+    "postcss": "^8.4.49",
     "projen": "^0.90.6",
+    "tailwindcss": "^3.4.16",
     "ts-node": "^10.9.2",
     "typescript": "^5.7.2"
   },
   "dependencies": {
-    "autoprefixer": "^10.4.20",
+    "gray-matter": "^4.0.3",
     "next": "^15.0.4",
-    "postcss": "^8.4.49",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "tailwindcss": "^3.4.16"
+    "next-seo": "^6.6.0",
+    "preline": "^2.6.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-markdown": "^9.0.1",
+    "remark": "^15.0.1",
+    "remark-html": "^16.0.1"
   },
   "engines": {
     "node": ">= 16.14.0"

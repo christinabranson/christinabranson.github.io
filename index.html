@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en" class="light">
 <head>
   <!-- Required Meta Tags Always Come First -->
   <meta charset="utf-8">
@@ -35,9 +35,13 @@
   <!-- Theme Check and Update -->
   <script>
     const html = document.querySelector('html');
-    const isLightOrAuto = localStorage.getItem('hs_theme') === 'light' || (localStorage.getItem('hs_theme') === 'auto' && !window.matchMedia('(prefers-color-scheme: dark)').matches);
-    const isDarkOrAuto = localStorage.getItem('hs_theme') === 'dark' || (localStorage.getItem('hs_theme') === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches);
+    // const isLightOrAuto = localStorage.getItem('hs_theme') === 'light' || (localStorage.getItem('hs_theme') === 'auto' && !window.matchMedia('(prefers-color-scheme: dark)').matches);
+    // const isDarkOrAuto = localStorage.getItem('hs_theme') === 'dark' || (localStorage.getItem('hs_theme') === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches);
 
+    const isLightOrAuto = true;
+    const isDarkOrAuto = false;
+
+    console.log(isLightOrAuto, isDarkOrAuto);
     if (isLightOrAuto && html.classList.contains('dark')) html.classList.remove('dark');
     else if (isDarkOrAuto && html.classList.contains('light')) html.classList.remove('light');
     else if (isDarkOrAuto && !html.classList.contains('dark')) html.classList.add('dark');

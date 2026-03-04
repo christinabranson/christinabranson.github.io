@@ -73,6 +73,8 @@
     .accent-text-orange { color: var(--accent-orange); }
     .accent-bg-purple { background-color: var(--accent-purple); }
     .accent-bg-orange { background-color: var(--accent-orange); }
+    
+    .line-custom { border-color: var(--accent-purple); }
 
     /* Force sidebar sticky on large screens */
     @media (min-width: 1024px) {
@@ -118,7 +120,7 @@
       <!-- Sidebar nav - scrollspy, desktop only -->
       <aside class="sidebar-sticky hidden lg:block shrink-0 w-48 pt-8 pl-4 xl:pl-8">
         <div data-hs-scrollspy="#scrollspy-content" class="flex flex-col gap-1">
-          <a href="#summary" class="hs-scrollspy-active:font-semibold hs-scrollspy-active:text-[#cb6ce6] py-2 px-3 text-sm text-gray-900 rounded-md hover:bg-gray-900/5 hover:text-[#cb6ce6] transition-colors">Summary</a>
+          <a href="#summary" class="hs-scrollspy-active:font-semibold hs-scrollspy-active:text-[#cb6ce6] py-2 px-3 text-sm text-gray-900 rounded-md hover:bg-gray-900/5 hover:text-[#cb6ce6] transition-colors">Professional Summary</a>
           <a href="#experience" class="hs-scrollspy-active:font-semibold hs-scrollspy-active:text-[#cb6ce6] py-2 px-3 text-sm text-gray-900 rounded-md hover:bg-gray-900/5 hover:text-[#cb6ce6] transition-colors">Experience</a>
           <a href="#skills" class="hs-scrollspy-active:font-semibold hs-scrollspy-active:text-[#cb6ce6] py-2 px-3 text-sm text-gray-900 rounded-md hover:bg-gray-900/5 hover:text-[#cb6ce6] transition-colors">Skills</a>
           <a href="#education" class="hs-scrollspy-active:font-semibold hs-scrollspy-active:text-[#cb6ce6] py-2 px-3 text-sm text-gray-900 rounded-md hover:bg-gray-900/5 hover:text-[#cb6ce6] transition-colors">Education</a>
@@ -132,15 +134,22 @@
         <div class="flex flex-col gap-6">
           <!-- Profile header - in main column -->
           <div class="w-full">
-            <h1 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white">
-              Christina Branson
-            </h1>
-            <p class="text-base sm:text-lg text-gray-900 dark:text-neutral-300 mt-1">
-              Staff Software Engineer / Platform & DevEx Leader
-            </p>
-            <p class="text-base text-gray-900 dark:text-neutral-400 mt-0.5">
-              Philadelphia, PA
-            </p>
+            <div class="flex items-center gap-x-4">
+              <div class="shrink-0">
+                <img class="shrink-0 size-24 sm:size-32 rounded-full object-cover" src="public/images/christina.jpg" alt="Christina Branson">
+              </div>
+              <div class="grow min-w-0">
+                <h1 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white">
+                  Christina Branson
+                </h1>
+                <p class="text-base sm:text-lg text-gray-900 dark:text-neutral-300 mt-1">
+                  Staff Software Engineer / Platform & DevEx Leader
+                </p>
+                <p class="text-base text-gray-900 dark:text-neutral-400 mt-0.5">
+                  Philadelphia, PA
+                </p>
+              </div>
+            </div>
           </div>
           <!-- Profile/About Column -->
           <div id="summary" class="w-full scroll-mt-24">
@@ -179,7 +188,7 @@
                 </li>
               </ul>
 
-              <hr class="my-8 border-gray-200 dark:border-neutral-700">
+              <hr class="my-8 line-custom">
 
               <h2 class="mb-5 font-medium text-gray-900 dark:text-neutral-200 pb-2 border-b-2 border-[#ff914d]">
                 Personal Summary

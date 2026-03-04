@@ -66,12 +66,23 @@
 
     .skills-list > li:not(:last-child)::after { content: ', '; }
     .skills-list > li:last-child::after { content: none; }
+    [data-hs-scrollspy] a.active { font-weight: 600; color: var(--accent-purple); }
     .accent-link:hover { color: var(--accent-purple) !important; text-decoration-color: var(--accent-purple) !important; }
     .accent-border { border-color: var(--accent-purple); }
     .accent-text-purple { color: var(--accent-purple); }
     .accent-text-orange { color: var(--accent-orange); }
     .accent-bg-purple { background-color: var(--accent-purple); }
     .accent-bg-orange { background-color: var(--accent-orange); }
+
+    /* Force sidebar sticky on large screens */
+    @media (min-width: 1024px) {
+      .sidebar-sticky {
+        position: sticky !important;
+        top: 2rem !important;
+        align-self: flex-start !important;
+        height: fit-content !important;
+      }
+    }
   </style>
 </head>
 
@@ -91,9 +102,33 @@
   <!-- ========== END HEADER ========== -->
 
   <!-- ========== MAIN CONTENT ========== -->
-  <main id="content">
+  <main id="content" class="block">
+    <!-- Mobile nav - horizontal, sticky -->
+    <nav class="lg:hidden sticky top-0 z-40 py-3 px-4 bg-[#ede4db]/95 backdrop-blur-sm border-b border-gray-200/50">
+      <div data-hs-scrollspy="#scrollspy-content" class="flex gap-2 overflow-x-auto pb-1">
+        <a href="#summary" class="hs-scrollspy-active:font-semibold hs-scrollspy-active:text-[#cb6ce6] shrink-0 py-2 px-3 text-sm text-gray-900 rounded-md hover:bg-gray-900/5 hover:text-[#cb6ce6] transition-colors">Summary</a>
+        <a href="#experience" class="hs-scrollspy-active:font-semibold hs-scrollspy-active:text-[#cb6ce6] shrink-0 py-2 px-3 text-sm text-gray-900 rounded-md hover:bg-gray-900/5 hover:text-[#cb6ce6] transition-colors">Experience</a>
+        <a href="#skills" class="hs-scrollspy-active:font-semibold hs-scrollspy-active:text-[#cb6ce6] shrink-0 py-2 px-3 text-sm text-gray-900 rounded-md hover:bg-gray-900/5 hover:text-[#cb6ce6] transition-colors">Skills</a>
+        <a href="#education" class="hs-scrollspy-active:font-semibold hs-scrollspy-active:text-[#cb6ce6] shrink-0 py-2 px-3 text-sm text-gray-900 rounded-md hover:bg-gray-900/5 hover:text-[#cb6ce6] transition-colors">Education</a>
+      </div>
+    </nav>
+
+    <!-- Desktop: grid with sticky sidebar -->
+    <div class="lg:flex lg:gap-8 lg:items-start">
+      <!-- Sidebar nav - scrollspy, desktop only -->
+      <aside class="sidebar-sticky hidden lg:block shrink-0 w-48 pt-8 pl-4 xl:pl-8">
+        <div data-hs-scrollspy="#scrollspy-content" class="flex flex-col gap-1">
+          <a href="#summary" class="hs-scrollspy-active:font-semibold hs-scrollspy-active:text-[#cb6ce6] py-2 px-3 text-sm text-gray-900 rounded-md hover:bg-gray-900/5 hover:text-[#cb6ce6] transition-colors">Summary</a>
+          <a href="#experience" class="hs-scrollspy-active:font-semibold hs-scrollspy-active:text-[#cb6ce6] py-2 px-3 text-sm text-gray-900 rounded-md hover:bg-gray-900/5 hover:text-[#cb6ce6] transition-colors">Experience</a>
+          <a href="#skills" class="hs-scrollspy-active:font-semibold hs-scrollspy-active:text-[#cb6ce6] py-2 px-3 text-sm text-gray-900 rounded-md hover:bg-gray-900/5 hover:text-[#cb6ce6] transition-colors">Skills</a>
+          <a href="#education" class="hs-scrollspy-active:font-semibold hs-scrollspy-active:text-[#cb6ce6] py-2 px-3 text-sm text-gray-900 rounded-md hover:bg-gray-900/5 hover:text-[#cb6ce6] transition-colors">Education</a>
+        </div>
+      </aside>
+
+      <!-- Content area -->
+      <div id="scrollspy-content" class="flex-1 min-w-0">
     <div class="w-full pt-6 px-4 sm:px-6 lg:px-8">
-      <div class="pb-6 max-w-3xl mx-auto">
+      <div class="pb-6 max-w-3xl">
         <div class="flex flex-col gap-6">
           <!-- Profile header - in main column -->
           <div class="w-full">
@@ -108,7 +143,7 @@
             </p>
           </div>
           <!-- Profile/About Column -->
-          <div class="w-full">
+          <div id="summary" class="w-full scroll-mt-24">
             <!-- About -->
             <div class="mt-8 md:mt-0">
               <h2 class="mb-5 font-medium text-gray-900 dark:text-neutral-200 pb-2 border-b-2 border-[#cb6ce6]">
@@ -156,7 +191,7 @@
           </div>
 
           <!-- Work Experience Column -->
-          <div class="w-full">
+          <div id="experience" class="w-full scroll-mt-24">
             <div class="mt-10 sm:mt-14 md:mt-0">
               <h2 class="mb-5 font-medium text-gray-900 dark:text-neutral-200 pb-2 border-b-2 border-[#cb6ce6]">
                 Professional experience
@@ -256,7 +291,7 @@
           <!-- Education Column -->
           <div class="w-full">
             <!-- Skills -->
-            <div class="my-10 sm:my-14 md:my-0">
+            <div id="skills" class="my-10 sm:my-14 md:my-0 scroll-mt-24">
               <h2 class="mb-5 font-medium text-gray-900 dark:text-neutral-200 pb-2 border-b-2 border-[#ff914d]">Skills</h2>
               <div class="space-y-3">
                 <dl class="flex flex-col sm:flex-row gap-1">
@@ -289,17 +324,18 @@
             <hr class="my-8 border-gray-200 dark:border-neutral-700">
 
             <!-- Education -->
-            <div class="mt-10 sm:mt-14 md:mt-0">
+            <div id="education" class="mt-10 sm:mt-14 md:mt-0 scroll-mt-24">
               <h2 class="mb-3 font-medium text-gray-900 dark:text-neutral-200 pb-2 border-b-2 border-[#cb6ce6]">Education</h2>
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <div class="p-4 border border-gray-200 rounded-lg dark:border-neutral-700 hover:border-[#cb6ce6] transition-colors">
                   <img src="public/images/UAH.png" alt="UAH" class="h-8 w-auto mb-2">
-                  <h3 class="mb-1 text-base text-gray-900 dark:text-neutral-400">MS Atmospheric Science</h3>
+                  <h3 class="mb-1 text-base text-gray-900 dark:text-neutral-400">Graduate Degree</h3>
+                  <p class="font-semibold text-base text-gray-900 dark:text-neutral-200">MS Atmospheric Science</p>
                   <p class="mt-1 text-base text-gray-900 dark:text-neutral-400">University of Alabama–Huntsville</p>
                 </div>
                 <div class="p-4 border border-gray-200 rounded-lg dark:border-neutral-700 hover:border-[#ff914d] transition-colors">
                   <img src="public/images/RowanLogo.svg" alt="Rowan" class="h-8 w-auto mb-2">
-                  <h3 class="mb-1 text-base text-gray-900 dark:text-neutral-400">BS Mathematics</h3>
+                  <h3 class="mb-1 text-base text-gray-900 dark:text-neutral-400">Undergraduate Degree</h3>
                   <p class="font-semibold text-base text-gray-900 dark:text-neutral-200">BS Mathematics (Physics Minor)</p>
                   <p class="mt-1 text-base text-gray-900 dark:text-neutral-400">Rowan University</p>
                 </div>
@@ -308,6 +344,8 @@
           </div>
         </div>
       </div>
+    </div>
+    </div>
     </div>
   </main>
 
@@ -328,5 +366,6 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/preline/dist/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@preline/scrollspy/index.js"></script>
 </body>
 </html>

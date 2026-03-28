@@ -16,15 +16,20 @@ I've worked across healthcare, AdTech, and platform engineering — environments
 changes need to be deliberate, reversible, and production-safe. My focus is on leaving
 platforms calmer, teams more effective, and systems easier to evolve than I found them.
 
+I'm particularly drawn to the intersection of developer experience, data systems and
+infrastructure, and practical AI integration — the three areas where I think
+engineering judgment matters most right now.
+
 ---
 
 ## Core Competencies
 
 - Platform & Infrastructure Modernization (AWS CDK, CI/CD, Cloud Architecture)
 - Developer Experience (Docs, Runbooks, Workflows, Cognitive Load Reduction)
+- Data Systems & Infrastructure (Pipelines, Event-driven systems, Large-scale processing)
+- AI-Augmented Engineering Workflows
 - Legacy System Modernization (Zero-downtime upgrades, risk-managed change)
 - Technical Leadership & Mentorship
-- Scalable System Design in Regulated Environments
 
 ---
 
